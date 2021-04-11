@@ -1,0 +1,7 @@
+<input type="text" placeholder="Nhập tên bạn" (keyup)="changeName($event)" #text>
+<h3 [ngStyle] = "getColor(text.value.length)">Your name is: {{name}}</h3>
+<input type="text" [(ngModel)]="name2">
+<h3>sfasdf: {{name2}}</h3>
+<button (click)="changeName2()">adfasdf</button>
+<h3>{{text.value}}</h3>
+<div [ngClass]="getClass(text.value.length)"></div>
